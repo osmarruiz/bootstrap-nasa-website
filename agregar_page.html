@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/styles.css"> 
+    <title>Agregar</title>
+    
+</head>
+<body>
+    
+  <!-- NAVBAR-->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/unnamed.png" alt="" width="70"  >
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="agregar_page.html">Agregar</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<h2>Tabla</h2>
+<div class="container">
+<!--tabla-->
+
+<div class="right mr-auto" >
+    <table>
+        <tr id="cabecerata">
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Carrera</th>
+          <th>Sexo</th>
+          <th>Opciones</th>
+        </tr>
+      
+      </table>
+      <div class="ml-auto" id="boeliminar" hidden>
+        <button  id="boeliminar" type="button"onclick="eliminar() ">Eliminar</button>
+      </div>
+      
+</div>
+<!--formulario-->
+<div class="left ml-auto">
+    <form name="regis" id="formulario">
+        
+        <div class="formu" >
+        <div class="buttonup ">
+            <button id="bonuevo" type="button" onclick="nuevo();">Nuevo</button>
+            <button id="boguardar" type="button" onclick="guardar()" disabled>Guardar</button>
+            <button id="bocancelar" type="button" onclick="cancelar()" disabled>Cancelar</button>
+        </div>
+    
+<div class="formal">
+        <div class="content">
+        <div class="r">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" disabled >
+        </div>
+        <div class="r">
+            <label for="lsname">Apellido:</label>
+            <input type="text" name="lsname" id="lsname" disabled>
+        </div>
+        <div class="r"> 
+            <label for="carreer">Carrera</label>
+            <select name="carreer" id="carreer" placeholder="seleccione" disabled>
+                <option selected>seleccione</option>
+                <option value="Sistemas">Sistemas</option>
+                <option value="Telematica">Telem&aacutetica</option>
+            </select>
+        </div>
+
+        <div class="cont">
+            <label>Sexo: </label>
+           
+            <div class="sex">
+<div>
+    <input type="radio" id="masculino" name="sexo" value="M" disabled>
+    <label for="masculino">Masculino</label>
+</div>
+
+<div>
+    <input type="radio" id="femenino" name="sexo" value="F" disabled>
+    <label for="femenino">Femenino</label>
+</div>
+     </div>
+        </div>
+    </div>
+</div>
+</div>
+    </form>
+</div>
+
+</div>
+<script src="js/funel.js"></script>
+<script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>

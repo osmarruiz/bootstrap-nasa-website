@@ -1,0 +1,147 @@
+
+.container{
+height: 700px;
+margin-top: 50px;
+margin-bottom: 50px;    
+display: flex;
+}
+
+h2{
+    margin:20px;
+    text-align: center;
+}
+
+table {
+    margin-top: 20px;
+    border: 1px solid rgb(53, 52, 52);
+    border-radius: 7px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    max-width: 100%;
+  }
+  
+  
+  td, th {
+    
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  #cabecerata{
+    background-color: rgb(18, 122, 27);
+    border-color: rgb(18, 122, 27);
+    color: white;
+}
+form {
+    margin-top: 20px;
+    padding-top: 20px;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.formu{
+    margin:20px;
+}
+.buttonup button{
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    color:white;
+}
+.buttond{
+    background-color: rgba(190, 185, 177, 0.384);
+    padding-left: 15px;
+}
+
+.buttond button{
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: -5px;
+    width: 40px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(53, 52, 52, 0.973);
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    color: yellow;
+}
+
+.content {
+   
+    margin-top: 10px;
+   
+    
+}
+.r{
+    margin-top: 10px;
+}
+
+.r label{
+    display: block;
+}
+
+.r input{
+    width: 450px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: rgba(168, 166, 166, 0.075);
+    border-radius: 5px;
+    border: 0.3px solid rgba(139, 139, 139, 0.199);
+}
+.r select{
+    width: 455px;
+    height: 40px; 
+    background-color: rgba(168, 166, 166, 0.075);
+    border-radius: 5px;
+    color: rgb(107, 107, 107);
+    border: 0.3px solid rgba(139, 139, 139, 0.199);
+    font-size: 20px;
+}
+.r option{
+font-size: 20px;
+}
+.r select option{
+    margin:10px;
+}
+.cont{
+    margin-top:40px;
+    margin-bottom:10px;
+}
+.sex {
+margin-top: 5px;
+margin-bottom: 20px;
+color: rgb(102, 101, 101);
+}
+
+#bonuevo{
+background-color: rgb(0, 0, 102);
+border-color: rgb(0, 0, 102);;
+}
+
+#boguardar{
+    background-color: rgb(18, 122, 27);
+    border-color: rgb(18, 122, 27);
+}
+
+#bocancelar{
+    background-color: rgb(65, 172, 199);
+    border-color: rgb(65, 172, 199);;
+}
+.boeliminar{
+    background-color: rgb(206, 22, 22);
+    border-color: rgb(206, 22, 22);
+    color: white;
+    border-radius: 4px;
+}
