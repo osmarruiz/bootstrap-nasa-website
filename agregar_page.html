@@ -1,110 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css"> 
-    <link rel="stylesheet" href="css/styles.css"> 
-    <title>Agregar</title>
-    
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Agregar</title>
 </head>
+
 <body>
-    
   <!-- NAVBAR-->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="navbar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/unnamed.png" alt="" width="70"  >
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="agregar_page.html">Agregar</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<h2>Tabla</h2>
-<div class="container">
-<!--tabla-->
+      <a class="navbar-brand" href="index.html">
+        <img src="img/unnamed.png" alt="" width="70" />
+      </a>
 
-<div class="right mr-auto" >
-    <table>
-        <tr id="cabecerata">
-          <th>Nombre</th>
-          <th>Apellido</th>
-          <th>Carrera</th>
-          <th>Sexo</th>
-          <th>Opciones</th>
-        </tr>
-      
-      </table>
-      <div class="ml-auto" id="boeliminar" hidden>
-        <button  id="boeliminar" type="button"onclick="eliminar() ">Eliminar</button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="agregar_page.html">Agregar</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="acercade.html">Acerca de</a></li>
+        </ul>
       </div>
-      
-</div>
-<!--formulario-->
-<div class="left ml-auto">
-    <form name="regis" id="formulario">
-        
-        <div class="formu" >
-        <div class="buttonup ">
-            <button id="bonuevo" type="button" onclick="nuevo();">Nuevo</button>
-            <button id="boguardar" type="button" onclick="guardar()" disabled>Guardar</button>
-            <button id="bocancelar" type="button" onclick="cancelar()" disabled>Cancelar</button>
-        </div>
-    
-<div class="formal">
-        <div class="content">
-        <div class="r">
-            <label for="name">Nombre:</label>
-            <input type="text" name="name" id="name" disabled >
-        </div>
-        <div class="r">
-            <label for="lsname">Apellido:</label>
-            <input type="text" name="lsname" id="lsname" disabled>
-        </div>
-        <div class="r"> 
-            <label for="carreer">Carrera</label>
-            <select name="carreer" id="carreer" placeholder="seleccione" disabled>
-                <option selected>seleccione</option>
-                <option value="Sistemas">Sistemas</option>
-                <option value="Telematica">Telem&aacutetica</option>
-            </select>
-        </div>
-
-        <div class="cont">
-            <label>Sexo: </label>
-           
-            <div class="sex">
-<div>
-    <input type="radio" id="masculino" name="sexo" value="M" disabled>
-    <label for="masculino">Masculino</label>
-</div>
-
-<div>
-    <input type="radio" id="femenino" name="sexo" value="F" disabled>
-    <label for="femenino">Femenino</label>
-</div>
-     </div>
-        </div>
     </div>
-</div>
-</div>
-    </form>
-</div>
+  </nav>
+  <div class="container">
+    <br>
+    <h2 class="text-center">Registrate aqu&iacute</h2>
+    <hr>
+    <br>
+    <!--tabla-->
+    <div class="row">
+      <div class="col">
+        <table class="table table-dark">
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Carrera</th>
+            <th>Sexo</th>
+            <th>Opciones</th>
+          </tr>
+        </table>
+      </div>
+      <!--formulario-->
+      <div class="col">
+        <form class="border rounded-3 p-4" id="formulario">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre:</label>
+            <input type="text" name="name" id="name" class="form-control" disabled required />
+          </div>
+          <br />
+          <div class="mb-3">
+            <label for="lsname" class="form-label">Apellido:</label>
+            <input type="text" name="lsname" id="lsname" class="form-control" disabled required />
+          </div>
+          <br>
+          <div class="mb-3">
+            <label for="carreer" class="form-label">Carrera</label>
+            <select name="carreer" id="carreer" class="form-select" disabled>
+              <option value="Ingenieria en Aeroespacial">Ingenieria en Aeroespacial</option>
+              <option value="Ciencias Espaciales">Ciencias Espaciales</option>
+              <option value="Sistemas de navegacion">Sistemas de Navegacion</option>
+              <option value="Informatica Espacial">Informatica Espacial</option>
+            </select>
+          </div>
+          <br>
+          <div class="mb-3">
+            <label class="form-label">Sexo: </label>
+            <label for="masculino"><input type="radio" id="masculino" name="sexo" value="M" disabled />
+              Masculino</label>
+            <label for="femenino"><input type="radio" id="femenino" name="sexo" value="F" disabled />
+              Femenino</label>
+          </div>
+          <br>
+          <div class="text-center mb-3">
+            <button id="bonuevo" class="btn btn-success" type="button" onclick="nuevo()">
+              Nuevo
+            </button>
+            <button id="boguardar" class="btn btn-secondary" type="button" onclick="guardar()" disabled>
+              Guardar
+            </button>
+            <button id="bocancelar" class="btn btn-warning" type="button" onclick="cancelar()" disabled>
+              Cancelar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
 
-</div>
-<script src="js/funel.js"></script>
-<script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="js/funel.js"></script>
+  <script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
